@@ -47,7 +47,7 @@ export default function SignIn({ navigation }) {
           validationSchema={validationSchema}
           validateOnChange={false}
         >
-          {({ values, handleSubmit, handleChange, isValid, errors }) => (
+          {({ values, handleSubmit, handleChange, errors }) => (
             <>
               {errors.email && <TextError>{errors.email}</TextError>}
               <FormInput
@@ -67,7 +67,7 @@ export default function SignIn({ navigation }) {
                 onChangeText={handleChange('password')}
                 name="password"
               />
-              <FormButton onPress={handleSubmit} disabled={isValid}>
+              <FormButton onPress={handleSubmit}>
                 <TextButton>ENTRAR</TextButton>
               </FormButton>
             </>

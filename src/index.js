@@ -6,8 +6,6 @@ import Routes from './routes';
 
 import './config/ReactotronConfig';
 
-// import { Container } from './styles';
-
 export default function App() {
   return (
     <>

@@ -40,7 +40,6 @@ export default function Repositories() {
       setRepos(data);
     }
     if (filter === '') loadRepo();
-    console.tron.log(filter);
   }, [filter]); // eslint-disable-line
 
   return (
